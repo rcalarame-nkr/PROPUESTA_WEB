@@ -1,0 +1,17 @@
+.highlight {
+  background: var(--nr-white); border: 2px solid var(--nr-accent);
+  border-radius: var(--radius-lg); padding: 36px 40px;
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 28px;
+}
+.label    { font-size: 12px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--nr-gray-400); margin-bottom: 8px; }
+.amount   { font-family: 'Playfair Display', serif; font-size: clamp(36px, 4.5vw, 52px); font-weight: 800; color: var(--nr-navy); }
+.currency { font-size: 55%; color: var(--nr-accent); margin-right: 4px; }
+.note     { font-size: 12px; color: var(--nr-gray-400); margin-top: 8px; }
+
+.taxes {
+  background: var(--nr-off-white); border-radius: var(--radius-md);
+  padding: 20px 24px; font-size: 13px; color: var(--nr-gray-600); line-height: 1.9;
+  min-width: 220px;
+}
+.taxes strong { color: var(--nr-navy); font-weight: 600; }

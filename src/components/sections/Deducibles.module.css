@@ -1,0 +1,42 @@
+.tableWrap { overflow-x: auto; margin-bottom: 32px; }
+
+.table {
+  width: 100%; border-collapse: separate; border-spacing: 0;
+  border-radius: var(--radius-md); overflow: hidden;
+  border: 1px solid var(--nr-gray-200);
+}
+.table th {
+  background: var(--nr-navy); color: var(--nr-white);
+  font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 14px 20px; text-align: left;
+}
+.table td {
+  padding: 14px 20px; font-size: 14px; color: var(--nr-text);
+  border-bottom: 1px solid var(--nr-gray-100); background: var(--nr-white);
+}
+.table tr:last-child td { border-bottom: none; }
+.table tr:hover td { background: var(--nr-off-white); }
+
+.tdCoverage { font-weight: 600; color: var(--nr-navy); }
+.tdAmount   { font-weight: 700; color: var(--nr-blue); font-family: monospace; font-size: 15px; }
+.tdZero     { font-weight: 600; color: var(--nr-green); }
+
+.subEyebrow {
+  font-size: 11px; font-weight: 700; letter-spacing: 2px;
+  text-transform: uppercase; color: var(--nr-accent); margin-bottom: 14px;
+}
+
+.periodGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; max-width: 460px; }
+
+.periodCard {
+  background: var(--nr-white); border: 1px solid var(--nr-gray-200);
+  border-radius: var(--radius-md); padding: 22px; text-align: center;
+}
+.years { font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 800; color: var(--nr-navy); }
+.years span { font-size: 16px; font-weight: 400; color: var(--nr-gray-400); }
+.free { font-size: 13px; color: var(--nr-green); font-weight: 600; margin-top: 8px; }
+.paid { font-size: 13px; color: var(--nr-accent); font-weight: 600; margin-top: 8px; }
+
+@media (max-width: 480px) {
+  .periodGrid { grid-template-columns: 1fr; }
+}

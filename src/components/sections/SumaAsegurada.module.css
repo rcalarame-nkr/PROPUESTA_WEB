@@ -1,0 +1,14 @@
+.hero {
+  background: linear-gradient(135deg, var(--nr-navy) 0%, var(--nr-blue) 100%);
+  border-radius: var(--radius-lg); padding: 52px 40px;
+  text-align: center; position: relative; overflow: hidden;
+}
+.hero::before {
+  content: ''; position: absolute; top: -50%; left: -50%;
+  width: 200%; height: 200%;
+  background: radial-gradient(circle at 65% 40%, rgba(200,151,42,.12) 0%, transparent 50%);
+}
+.heroLabel  { font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,.5); margin-bottom: 16px; position: relative; }
+.heroAmount { font-family: 'Playfair Display', serif; font-size: clamp(42px, 6vw, 68px); font-weight: 800; color: var(--nr-white); position: relative; }
+.currency   { color: var(--nr-accent-lt); font-size: 60%; margin-right: 6px; }
+.heroDetail { font-size: 13px; color: rgba(255,255,255,.5); margin-top: 14px; position: relative; }

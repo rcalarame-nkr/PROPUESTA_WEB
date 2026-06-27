@@ -1,0 +1,28 @@
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
+
+.item {
+  display: flex; gap: 14px;
+  background: var(--nr-white); border: 1px solid var(--nr-gray-200);
+  border-radius: var(--radius-md); padding: 16px 18px;
+  transition: border-color .2s;
+}
+.item:hover { border-color: var(--nr-accent); }
+
+.iconBox {
+  width: 36px; height: 36px; border-radius: 8px;
+  background: rgba(200,151,42,.1);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 17px; flex-shrink: 0;
+}
+
+.content { display: flex; flex-direction: column; gap: 4px; flex: 1; }
+.itemTitle { font-size: 13px; font-weight: 600; color: var(--nr-navy); }
+.itemDesc  { font-size: 12px; color: var(--nr-gray-600); line-height: 1.55; }
+
+.sublimit {
+  display: inline-block; margin-top: 4px;
+  background: rgba(26,60,110,.08); border: 1px solid rgba(26,60,110,.15);
+  color: var(--nr-blue); font-size: 11px; font-weight: 600;
+  padding: 2px 8px; border-radius: 4px; font-family: monospace;
+  align-self: flex-start;
+}

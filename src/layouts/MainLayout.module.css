@@ -1,0 +1,17 @@
+.shell {
+  min-height: 100vh;
+}
+
+.mainContent {
+  margin-top: var(--navbar-h);
+  transition: margin-left .3s cubic-bezier(.4,0,.2,1);
+  min-height: calc(100vh - var(--navbar-h));
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 850;
+  background: rgba(0, 0, 0, .5);
+  backdrop-filter: blur(2px);
+}

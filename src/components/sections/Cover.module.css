@@ -1,0 +1,58 @@
+.cover {
+  background: linear-gradient(135deg, var(--nr-navy) 0%, var(--nr-navy-mid) 55%, #0D1E3A 100%);
+  padding: 72px 52px 64px;
+  position: relative; overflow: hidden;
+  min-height: 400px;
+  display: flex; flex-direction: column; justify-content: space-between; gap: 40px;
+}
+
+/* Radial glow */
+.cover::before {
+  content: ''; position: absolute; top: -80px; right: -80px;
+  width: 420px; height: 420px;
+  background: radial-gradient(circle, rgba(200,151,42,.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Accent bottom line */
+.cover::after {
+  content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--nr-accent) 0%, var(--nr-accent-lt) 50%, transparent 100%);
+}
+
+.topRow {
+  display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 16px;
+}
+
+.badge {
+  background: rgba(200,151,42,.15);
+  border: 1px solid rgba(200,151,42,.3);
+  color: var(--nr-accent-lt);
+  font-size: 11px; font-weight: 600; letter-spacing: 2px;
+  text-transform: uppercase; padding: 6px 14px; border-radius: 20px;
+}
+
+.polizaBox {
+  background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12);
+  border-radius: 10px; padding: 12px 18px; text-align: right;
+}
+.polizaLabel { font-size: 10px; color: var(--nr-gray-400); letter-spacing: 1.5px; text-transform: uppercase; }
+.polizaNum   { font-size: 14px; font-weight: 600; color: var(--nr-white); margin-top: 4px; font-family: monospace; }
+
+.title { font-family: 'Playfair Display', serif; font-size: clamp(28px, 4vw, 46px); font-weight: 800; color: var(--nr-white); line-height: 1.15; margin-bottom: 10px; }
+.titleAccent { color: var(--nr-accent-lt); }
+
+.subtitle { font-size: 15px; color: rgba(255,255,255,.55); font-weight: 300; margin-bottom: 40px; }
+
+.metaGrid { display: flex; gap: 40px; flex-wrap: wrap; }
+
+.metaItem {}
+.metaLabel { font-size: 10px; color: var(--nr-gray-400); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 5px; }
+.metaValue { font-size: 15px; font-weight: 600; color: var(--nr-white); }
+.metaSub   { font-size: 12px; color: rgba(255,255,255,.45); margin-top: 2px; }
+
+@media (max-width: 600px) {
+  .cover { padding: 48px 24px 52px; }
+  .metaGrid { gap: 24px; }
+}

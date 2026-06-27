@@ -1,0 +1,21 @@
+.card {
+  background: linear-gradient(135deg, #F0F4FF, var(--nr-white));
+  border: 1px solid #D0DAEF; border-radius: var(--radius-lg);
+  padding: 36px; display: flex; align-items: center; gap: 32px; flex-wrap: wrap;
+}
+.logoBox {
+  width: 90px; height: 90px; border-radius: 14px;
+  background: var(--nr-white); border: 1px solid var(--nr-gray-200);
+  box-shadow: var(--shadow-sm);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.logoText { font-family: 'Playfair Display', serif; font-weight: 800; font-size: 11px; color: var(--nr-navy); text-align: center; line-height: 1.4; }
+
+.info {}
+.name { font-size: 20px; font-weight: 700; color: var(--nr-navy); margin-bottom: 8px; }
+.desc { font-size: 14px; color: var(--nr-gray-600); line-height: 1.65; max-width: 520px; }
+.tag  {
+  display: inline-block; margin-top: 12px;
+  background: rgba(26,60,110,.1); border-radius: 6px;
+  padding: 5px 12px; font-size: 12px; font-weight: 600; color: var(--nr-blue);
+}

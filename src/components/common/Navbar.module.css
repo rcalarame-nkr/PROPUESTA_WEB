@@ -1,0 +1,67 @@
+.navbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  height: var(--navbar-h);
+  background: var(--nr-navy);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 24px 0 16px;
+  box-shadow: 0 2px 20px rgba(0,0,0,.35);
+}
+
+.left { display: flex; align-items: center; gap: 12px; }
+
+.hamburger {
+  background: none; border: none; cursor: pointer;
+  color: var(--nr-white); padding: 6px; border-radius: 6px;
+  display: flex; align-items: center;
+  transition: background .2s;
+}
+.hamburger:hover { background: rgba(255,255,255,.08); }
+
+.brand {
+  display: flex; align-items: center; gap: 12px;
+  text-decoration: none;
+}
+
+.logoMark {
+  width: 42px; height: 42px;
+  background: linear-gradient(135deg, var(--nr-accent) 0%, var(--nr-accent-lt) 100%);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 16px; color: var(--nr-navy);
+  font-family: 'Playfair Display', serif;
+  letter-spacing: -1px; flex-shrink: 0;
+}
+
+.brandText { display: flex; flex-direction: column; }
+.brandName    { font-size: 15px; font-weight: 700; color: var(--nr-white); letter-spacing: .2px; }
+.brandTagline { font-size: 10px; color: var(--nr-gray-400); letter-spacing: 1.5px; text-transform: uppercase; }
+
+.right { display: flex; align-items: center; gap: 16px; }
+
+.badge {
+  background: rgba(200,151,42,.15);
+  border: 1px solid rgba(200,151,42,.35);
+  color: var(--nr-accent-lt);
+  font-size: 11px; font-weight: 600;
+  padding: 4px 10px; border-radius: 20px;
+  letter-spacing: .5px; white-space: nowrap;
+}
+
+.btnPdf {
+  background: linear-gradient(135deg, var(--nr-accent) 0%, var(--nr-accent-lt) 100%);
+  color: var(--nr-navy); border: none; border-radius: 8px;
+  padding: 9px 18px; font-size: 13px; font-weight: 700;
+  cursor: pointer; display: flex; align-items: center; gap: 7px;
+  transition: transform .15s, box-shadow .15s;
+  white-space: nowrap;
+}
+.btnPdf:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(200,151,42,.45);
+}
+.btnPdf:disabled { opacity: .65; cursor: wait; }
+
+@media (max-width: 600px) {
+  .badge { display: none; }
+  .brandTagline { display: none; }
+}

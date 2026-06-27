@@ -1,0 +1,12 @@
+.shell {
+  padding: 52px 40px;
+  background: var(--nr-off-white);
+}
+.shell.alt {
+  background: var(--nr-white);
+}
+.header { margin-bottom: 32px; }
+
+@media (max-width: 768px) {
+  .shell { padding: 40px 20px; }
+}

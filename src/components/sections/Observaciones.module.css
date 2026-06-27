@@ -1,0 +1,13 @@
+.card {
+  background: var(--nr-navy); border-radius: var(--nr-radius-lg, 16px);
+  padding: 36px; display: flex; flex-direction: column; gap: 16px;
+}
+.cardTitle {
+  font-size: 13px; font-weight: 700; letter-spacing: 1px;
+  text-transform: uppercase; color: var(--nr-accent-lt);
+  margin-bottom: 4px;
+}
+.card p {
+  font-size: 14px; color: rgba(255,255,255,.75); line-height: 1.85;
+}
+.card strong { color: var(--nr-accent-lt); }

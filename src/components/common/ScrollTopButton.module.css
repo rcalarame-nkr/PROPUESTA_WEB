@@ -1,0 +1,14 @@
+.btn {
+  position: fixed; bottom: 28px; right: 28px; z-index: 999;
+  width: 44px; height: 44px;
+  background: var(--nr-navy); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--nr-white); border: 2px solid rgba(200,151,42,.5);
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0,0,0,.25);
+  opacity: 0; transform: translateY(12px);
+  transition: opacity .3s, transform .3s, background .2s;
+  pointer-events: none;
+}
+.btn.visible { opacity: 1; transform: translateY(0); pointer-events: all; }
+.btn:hover   { background: var(--nr-blue); }
